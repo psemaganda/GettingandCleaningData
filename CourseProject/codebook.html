@@ -59,13 +59,39 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 
 
-<p>The variable names selected for this dataset come from the accelerometer and gyroscope 3-axial raw signals timeAcc in XYZ dimensions and timeGyro in XYZ dimensions. All the variable names that have ‘time’ in them are time domain signals. The acceleration signal was separated into body and gravity acceleration signals (timeBodyAcc in XYZ dimensions and timeGravityAcc in XYZ dimensions).</p>
-<p>The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (timeBodyAccJerk in XYZ dimensions and timeBodyGyroJerk in XYZ dimensions). The magnitude of these three-dimensional signals were calculated using the Euclidean norm (timeBodyAccMag, timeGravityAccMag, timeBodyAccJerkMag, timeBodyGyroMag, timeBodyGyroJerkMag).</p>
+<p>The variable names selected for this dataset come from the accelerometer and gyroscope 3-axial raw signals timeAcc in XYZ dimensions and timeGyro in XYZ dimensions.</p>
+<p>All the variable names that have ‘time’ in them are time domain signals.</p>
+<p>The acceleration signal was separated into body and gravity acceleration signals (timeBodyAcc in XYZ dimensions and timeGravityAcc in XYZ dimensions).</p>
+<p>The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (timeBodyAccJerk in XYZ dimensions and timeBodyGyroJerk in XYZ dimensions).</p>
+<p>The magnitude of these three-dimensional signals were calculated using the Euclidean norm (timeBodyAccMag, timeGravityAccMag, timeBodyAccJerkMag, timeBodyGyroMag, timeBodyGyroJerkMag).</p>
 <p>A Fast Fourier Transform (FFT) was applied to some of these signals producing freqBodyAcc in XYZ dimensions, freqBodyAccJerk in XYZ dimensions, freqBodyGyro in XYZ dimensions, freqBodyAccJerkMag, freqBodyGyroMag, freqBodyGyroJerkMag.</p>
-<p>These signals were used to estimate variables of the feature vector for each pattern:<br />‘XYZ’ is used to denote 3-axial signals in the X, Y and Z directions. ‘freq’ is used to denote frequency domain signals ‘Mag’ is used to denote Magnitude ‘Acc’ is used to denote acceleration</p>
-<p>The set of variables that were estimated from these signals are: mean: Mean value std: Standard deviation meanFreq: Weighted average of the frequency components to obtain a mean frequency angle: Angle between two vectors.</p>
-<p>Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle variable: gravityMean timeBodyAccMean timeBodyAccJerkMean timeBodyGyroMean timeBodyGyroJerkMean</p>
-<p>Two variables were used to identify the participants, and the activities: Subject: Used to identify the pariticipants (there are 30 participants, 1-30) Activity: Used to identify the activities (“WALKING”, “WALKING_UPSTAIRS”, “WALKING_DOWNSTAIRS”, “SITTING”, “STANDING”, “LAYING”)</p>
+<p>These signals were used to estimate variables of the feature vector for each pattern:</p>
+<ul>
+<li>‘XYZ’ is used to denote 3-axial signals in the X, Y and Z directions.</li>
+<li>‘freq’ is used to denote frequency domain signals</li>
+<li>‘Mag’ is used to denote Magnitude</li>
+<li>‘Acc’ is used to denote acceleration</li>
+</ul>
+<p>The set of variables that were estimated from these signals are:</p>
+<ul>
+<li>mean: Mean value</li>
+<li>std: Standard deviation</li>
+<li>meanFreq: Weighted average of the frequency components to obtain a mean frequency</li>
+<li>angle: Angle between two vectors.</li>
+</ul>
+<p>Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle variable:</p>
+<ul>
+<li>gravityMean</li>
+<li>timeBodyAccMean</li>
+<li>timeBodyAccJerkMean</li>
+<li>timeBodyGyroMean</li>
+<li>timeBodyGyroJerkMean</li>
+</ul>
+<p>Two variables were used to identify the participants, and the activities:</p>
+<ul>
+<li>Subject: Used to identify the pariticipants (there are 30 participants, 1-30)</li>
+<li>Activity: Used to identify the activities (“WALKING”, “WALKING_UPSTAIRS”, “WALKING_DOWNSTAIRS”, “SITTING”, “STANDING”, “LAYING”)</li>
+</ul>
 <p>time domain signals:</p>
 <pre><code>            Direction:              
                                     X-Direction                     Y-Direction                             Z-Direction
@@ -165,7 +191,8 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
             Activity:
             &quot;Activity&quot;:     &quot;WALKING&quot;, &quot;WALKING_UPSTAIRS&quot;, &quot;WALKING_DOWNSTAIRS&quot;, &quot;SITTING&quot;, &quot;STANDING&quot;, &quot;LAYING&quot;</code></pre>
-<p>==Rferences== *features_info.txt</p>
+<p>==Rferences==</p>
+<p>*features_info.txt</p>
 
 
 </div>

@@ -5,38 +5,45 @@ date: "December 17, 2014"
 output: html_document
 ---
 
-The variable names selected for this dataset come from the accelerometer and gyroscope 3-axial raw signals timeAcc in XYZ dimensions and timeGyro in XYZ dimensions. 
+The variable names selected for this dataset come from the accelerometer and gyroscope 3-axial raw signals timeAcc in XYZ dimensions and timeGyro in XYZ dimensions.
+
 All the variable names that have 'time' in them are time domain signals. 
+
 The acceleration signal was separated into body and gravity acceleration signals (timeBodyAcc in XYZ dimensions and timeGravityAcc in XYZ dimensions). 
 
 The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (timeBodyAccJerk in XYZ dimensions and 
 timeBodyGyroJerk in XYZ dimensions). 
+
 The magnitude of these three-dimensional signals were calculated using the Euclidean norm (timeBodyAccMag, timeGravityAccMag, timeBodyAccJerkMag, timeBodyGyroMag, timeBodyGyroJerkMag). 
 
 A Fast Fourier Transform (FFT) was applied to some of these signals producing freqBodyAcc in XYZ dimensions, freqBodyAccJerk in XYZ dimensions, freqBodyGyro in XYZ dimensions, freqBodyAccJerkMag, freqBodyGyroMag, freqBodyGyroJerkMag. 
 
 These signals were used to estimate variables of the feature vector for each pattern:  
-'XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-'freq' is used to denote frequency domain signals
-'Mag' is used to denote Magnitude
-'Acc' is used to denote acceleration
 
-The set of variables that were estimated from these signals are: 
-mean: Mean value
-std: Standard deviation
-meanFreq: Weighted average of the frequency components to obtain a mean frequency
-angle: Angle between two vectors.
+- 'XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+- 'freq' is used to denote frequency domain signals
+- 'Mag' is used to denote Magnitude
+- 'Acc' is used to denote acceleration
+
+The set of variables that were estimated from these signals are:
+
+- mean: Mean value
+- std: Standard deviation
+- meanFreq: Weighted average of the frequency components to obtain a mean frequency
+- angle: Angle between two vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle variable:
-gravityMean
-timeBodyAccMean
-timeBodyAccJerkMean
-timeBodyGyroMean
-timeBodyGyroJerkMean
+
+- gravityMean
+- timeBodyAccMean
+- timeBodyAccJerkMean
+- timeBodyGyroMean
+- timeBodyGyroJerkMean
 
 Two variables were used to identify the participants, and the activities:
-Subject: Used to identify the pariticipants (there are 30 participants, 1-30)
-Activity: Used to identify the activities ("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
+
+- Subject: Used to identify the pariticipants (there are 30 participants, 1-30)
+- Activity: Used to identify the activities ("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
 
 time domain signals:
 
@@ -143,4 +150,5 @@ Subject and Activity:
 
 
 ==Rferences==
+
 *features_info.txt
